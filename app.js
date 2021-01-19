@@ -15,7 +15,7 @@ res.send('response from node.js');
 // app.use('/call/session', callController);
 // app.use('/call/sendEmail', callController);
 // app.use('/create', callController);
-app.listen(SERVER_PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log("---------------------------------------------------------");
     console.log(" ")
     console.log(` Server is listening on port ${SERVER_PORT}`);
