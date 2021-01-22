@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 const host = 'api.worldweatheronline.com';
-const wwoApiKey = 'E9e4d189bba84454395a71525212201';
+const wwoApiKey = '9e4d189bba84454395a71525212201';
 
 
 app.post('/call', function (req, res) {
